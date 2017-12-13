@@ -1,3 +1,4 @@
+import './style/index.sass'
 //app.js
 App({
   async getUserInfo(){

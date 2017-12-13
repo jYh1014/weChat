@@ -1,0 +1,18 @@
+<!--logs.wxml-->
+<template name="">
+    <view class="container log-list">
+  <block wx:for-items="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view>
+</template>
+
+<script>
+    
+Page({
+  data: {
+    logs: '日志'
+  },
+  
+})
+</script>

@@ -1,6 +1,6 @@
 const { resolve } = require('path')
 const r = url => resolve(__dirname,url)
-const assetsPath = resolve(process.cwd(),'./dist')
+const assetsPath = resolve(process.cwd(),'./mina')
 module.exports = {
     "json":{
         "pages":[
@@ -10,7 +10,19 @@ module.exports = {
           "tabBar":{
               "color":"#565656",
               "selectedColor":"#5aaca5",
-              "list":[]
+              "list":[{
+                "iconPath": "static/home.png",
+                "selectedIconPath": "static/home-selected.png",
+                "pagePath": "page/index/index",
+                "text": "家族脸谱"
+              } ,
+              {
+                "iconPath": "static/user.png",
+                "selectedIconPath": "static/user-selected.png",
+                "pagePath": "page/logs/logs",
+                "text": "我的账户"
+              }                
+              ]
         }
     },    
     "window":{
